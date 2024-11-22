@@ -1,0 +1,31 @@
+TO DO:
+
+
+- HP Search:
+    - TM Vanilla:
+        - Orig data
+            - normal ✅ - acc: 76.61, params: {'s': 19.04, 'n_clauses': 6840, 'threshold': 656, 'max_included_literals': 115, 'weighted_clauses': 'True'}
+            - upscale ✅ - acc: 77.91, params: {'s': 8.393108595614528, 'n_clauses': 9144, 'threshold': 5319, 'max_included_literals': 54, 'weighted_clauses': 'False'}
+            - downscale ✅ - acc: 69.97, params: {'s': 8.305329158199893, 'n_clauses': 9770, 'threshold': 5883, 'max_included_literals': 146, 'weighted_clauses': 'True'}
+            - 2 classes ✅ - acc: 90.77, params: {'s': 14.122674425147263, 'n_clauses': 5944, 'threshold': 1907, 'max_included_literals': 98, 'weighted_clauses': 'True'}
+        - preprocessed data:
+            - normal ✅ - acc: 74.69, params: {'s': 4.674855869093127, 'n_clauses': 7654, 'threshold': 1455, 'max_included_literals': 34, 'weighted_clauses': 'False'}
+            - upscale ✅ - acc: 74.16, params: {'s': 3.2127852687445317, 'n_clauses': 5544, 'threshold': 4638, 'max_included_literals': 29, 'weighted_clauses': 'True'}
+            - downscale ✅ - acc: 66.89, params: {'s': 18.364081243732265, 'n_clauses': 1700, 'threshold': 799, 'max_included_literals': 8, 'weighted_clauses': 'True'}
+            - 2 classes ✅ - acc: 89.53, params: {'s': 6.984861527230796, 'n_clauses': 7448, 'threshold': 441, 'max_included_literals': 13, 'weighted_clauses': 'True'}
+
+    - TM Coalesced:
+        - Orig data:
+            - 3 classes ✅ - acc:77.19, params: {'s': 14.613381878665509, 'n_clauses': 9974, 'threshold': 3867, 'max_included_literals': 136, 'weighted_clauses': 'False', 'focused_negative_sampling': 'False'}
+            - 2 classes ✅ - acc: 90.50, params: {'s': 8.87349098566071, 'n_clauses': 5382, 'threshold': 3990, 'max_included_literals': 170, 'weighted_clauses': 'True', 'focused_negative_sampling': 'False'}
+        - Preprocessed data:
+            - 3 classes ✅ - acc: 75.25, params: {'s': 13.55767436566772, 'n_clauses': 3528, 'threshold': 1678, 'max_included_literals': 17, 'weighted_clauses': 'False', 'focused_negative_sampling': 'True'}
+            - 3 classes with added custom cols ✅ - acc: 74.80
+            - 2 classes ✅ - acc: 90.87, params: {'s': 5.110761971635721, 'n_clauses': 4726, 'threshold': 3708, 'max_included_literals': 19, 'weighted_clauses': 'False', 'focused_negative_sampling': 'False'}
+            - 2 classes wout upscale ✅ - acc: 89.39, params: {'s': 4.1358196771596365, 'n_clauses': 6700, 'threshold': 3950, 'max_included_literals': 21, 'weighted_clauses': 'True', 'focused_negative_sampling': 'False'}
+
+BEST 3 classes with upscale✅: acc: 77.83 {'s': 6.514946021276279, 'n_clauses': 5300, 'threshold': 6979, 'max_included_literals': 153, 'weighted_clauses': 'True', 'tm_type': 'vanilla'}
+
+- Pycaret with orig data ✅
+- Pycaret with preprocessed data ✅
+
